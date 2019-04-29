@@ -1,0 +1,24 @@
+{
+  "show_progress": true,
+  "force_ipv4": true,
+  "archive": true,
+  "verbose": true,
+  "compress": true,
+  "log": true,
+  "local_directory_path": "/path/to/the/directory",
+  "remote_directory_path": "remote_user@remote_host:/remote_path/to/directory",
+  "remote_shell_command": "ssh -p23",
+  "mail": {
+    "from": "from@domain.com",
+    "to": [
+      "to@email.com",
+      "to2@email.com"
+    ]
+  },
+  "smtp": {
+    "host": "mailhost.com",
+    "user": "username@domain.com",
+    "password": "password",
+    "port": 25
+  }
+}
