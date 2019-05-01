@@ -99,8 +99,7 @@ func main() {
 	_, err = exec.Command(path, args...).Output()
 
 	if err != nil {
-		//log.Fatal(fmt.Printf("Command finished with error: %v", err))
-		fmt.Println("asd")
+		log.Fatal(fmt.Printf("Command finished with error: %v", err))
 	}
 
 	sendTo := viper.GetStringSlice("mail.to")
@@ -129,7 +128,7 @@ Content-Disposition: attachment; filename="rsync.log"
 Content-Transfer-Encoding: base64
 
 %s
---_rssbckkgthbscrpt14467_
+--_rssbckkgthbscrpt14467_--
 `
 
 	// variables to make ExamplePlainAuth compile, without adding
